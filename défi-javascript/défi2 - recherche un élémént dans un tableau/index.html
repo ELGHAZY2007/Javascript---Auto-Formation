@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+            var isFound;
+
+            isFound = false;
+            // var listNumbers = createArray(5);
+            var listNumbers = [];
+
+            listNumbers[0] = 20;
+            listNumbers[1] = 40;
+            listNumbers[2] = 60;
+            listNumbers[3] = 80;
+            listNumbers[4] = 100;
+            var userInput;
+            var i;
+
+            userInput = window.prompt('Entrez une valeur pour userInput');
+            for (i = 0; i <= 4; i++) {
+                if (userInput == listNumbers[i]) {
+                    isFound = true;
+                }
+            }
+            if (isFound) {
+                window.alert("ç'est ça le nombre");
+            } else {
+                window.alert("ç'est pas le nombre");
+            }
+        
+    </script>
+</body>
+
+</html>
