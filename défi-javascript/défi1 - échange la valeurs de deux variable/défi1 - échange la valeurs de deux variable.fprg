@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-16 01:16:55 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC0xMlNBT0NROzIwMjEtMTItMTY7IjAxOjA4OjAzICI7MzA4OQ=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC0xMlNBT0NROzIwMjEtMTItMTY7IjAxOjE2OjU1ICI7MTszMjAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <output expression="&quot;avant a = &quot;&amp; a &amp; &quot; b = &quot; &amp; b" newline="True"/>
+            <assign variable="c" expression="a"/>
+            <assign variable="a" expression="b"/>
+            <assign variable="b" expression="c"/>
+            <output expression="&quot;apr&#233;s a = &quot;&amp; a &amp; &quot; b = &quot; &amp; b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
