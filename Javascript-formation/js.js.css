@@ -1,0 +1,30 @@
+* {
+    background-color: red;
+    padding:0;
+    margin: 0;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+
+}
+
+#submi1 {
+    font-size: 20px;
+    border-radius: 12px;
+    padding:20px 22px;
+    background-color: white;
+    color: green;
+    border:none;
+    cursor: pointer;
+}
+
+#submi1:hover {
+    color: red;
+    background-color: yellow;
+    transition: all 0.9s ease-in;
+}
