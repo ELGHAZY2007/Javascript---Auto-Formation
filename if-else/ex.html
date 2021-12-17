@@ -7,28 +7,17 @@
     <title>Document</title>
 </head>
 <body>  
-    <p id="missagee"></p>
 <script>
+    var Price = 1000;
+    if(Price < 1500){
 
-    const time = new Date().getHours();
+        console.log("bon prix");
+    }else{
 
-    var missage;
-
-    if (time < 5) { missage = "Good morning"; } 
-
-
-    else if (time <20)  { missage = "Good day" ; }
-
-
-    else { greeting = "Good evening"; }
-
-    
-     
-    
-
-    document.getElementById("missagee").innerHTML = missage;
-    
-    </script>
+        console.log("pas bon le prix");
+        
+    }
+</script>
     
     
 </body>
