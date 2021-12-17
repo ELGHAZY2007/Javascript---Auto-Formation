@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-17 12:14:06 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC0xMlNBT0NROzIwMjEtMTItMTc7IjEyOjAzOjAwICI7MzA4NA=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC0xMlNBT0NROzIwMjEtMTItMTc7IjEyOjE0OjA2ICI7MTszMjAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="maxNumber" type="Integer" array="False" size=""/>
+            <declare name="listNumber" type="Integer" array="True" size="10"/>
+            <assign variable="listNumber[0]" expression="10"/>
+            <assign variable="listNumber[1]" expression="20"/>
+            <assign variable="listNumber[2]" expression="30"/>
+            <assign variable="listNumber[3]" expression="40"/>
+            <assign variable="listNumber[4]" expression="50"/>
+            <assign variable="listNumber[5]" expression="60"/>
+            <assign variable="listNumber[6]" expression="70"/>
+            <assign variable="listNumber[7]" expression="80"/>
+            <assign variable="listNumber[8]" expression="90"/>
+            <assign variable="listNumber[9]" expression="100"/>
+            <assign variable="maxNumber" expression="listNumber[0]"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="listNumber[i] &gt;= maxNumber">
+                    <then>
+                        <assign variable="maxNumber" expression="listNumber[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;le nombre :&quot; &amp;maxNumber" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
