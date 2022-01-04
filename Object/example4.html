@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Set the Properties of an Object</title>
+</head>
+<body>
+    <script>
+    var person = {
+        name: "Peter",
+        age: 28,
+        gender: "Male"
+    };
+    
+    // Setting a new property
+    person.country = "United States";
+    document.write(person.country + "<br>"); // Prints: United States
+    
+    person["email"] = "peterparker@mail.com";
+    document.write(person.email + "<br>"); // Prints: peterparker@mail.com
+    
+    // Updating existing property
+    person.age = 30;
+    document.write(person.age + "<br>"); // Prints: 30
+    
+    person["name"] = "Peter Parker";
+    document.write(person.name); // Prints: Peter Parker
+    </script>
+</body>
+</html>
