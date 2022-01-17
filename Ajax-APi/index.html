@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX API</title>
+</head>
+
+<body>
+    <script>
+        fetch("./eBook.json")
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (data) {
+                for (var i = 0; i < data.eBooks.length; i++) {
+                    document.write("<p>" + data.eBooks[i].language +
+                        " " + data.eBooks[i].edition + "</p>"
+                    )
+                }
+            })
+            .catch(function (error) {
+                console.log(error)
+            })
+    </script>
+
+</body>
+
+</html>
